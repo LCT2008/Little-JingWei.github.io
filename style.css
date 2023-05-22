@@ -1,0 +1,221 @@
+.prank {
+    transition: transform 0.5s ease;
+}
+
+.prank:hover {
+    opacity: 0.8;
+    transform: scale(1.2);
+}
+
+nav {
+    text-align: center;
+    margin: auto;
+    display: inline-flex;
+    font-size: 20px;
+}  
+
+.nav1 {
+    margin-left: 125px;
+    margin-right: 110px;
+    margin-top: 40px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav1:hover {
+    opacity: 0.65;
+}
+
+.introduction {
+    height: 70px;
+    width: 100%;
+    background-color: white;
+    opacity: 0.95;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 15px;
+    display: inline-flex;
+}
+
+.intro {
+    margin-left: 120px;
+    margin-right: 10px;
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.intro1 {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.intro2 {
+    margin-left: 110px;
+    margin-right: 210px;
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.content {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 580px;
+    width: 100%;
+    background-color: white;
+    display: inline-flex;
+    margin: auto;
+}
+
+.box1 {
+    height: 400px;
+    width: 400px;
+    text-align: center;
+    font-size: 19px;
+}
+
+.box2 {
+    height: 400px;
+    width: 300px;
+    text-align: center;
+    font-size: 22px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.box3 {
+    height: 400px;
+    width: 400px;
+    margin: auto;
+    margin-top: 40px;
+    font-size: 18px;
+}
+
+.history {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 60px;
+}
+.mv {
+    margin-top: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.about {
+    display: list-item;
+    margin-left: 20px;
+    margin-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.product {
+    height: 620px;
+    width: 75%;
+    background-color: white;
+    opacity: 0.85;
+    margin: auto;
+    margin-top: 5px;
+    border-radius: 40px;
+}
+
+.checked {
+    color: rgb(255, 190, 69);
+}
+
+.classic-green {
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.romantic-red {
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.rainbow-button {
+    background: linear-gradient(to right,
+      red 0%, orange 14%, yellow 28%, green 42%,
+      blue 57%, indigo 71%, violet 85%
+    );
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.classic-green:hover {
+    transform: scale(1.35);
+}
+
+.romantic-red:hover {
+    transform: scale(1.35);
+}
+
+.rainbow-button:hover {
+    transform: scale(1.35);
+}
+
+.decrement {
+    cursor: pointer;
+}
+
+.increment {
+    cursor: pointer;
+}
+
+.purchase {
+    cursor: pointer;
+    transition: transform.2s ease;
+}
+
+.purchase:hover {
+    opacity: 0.85;
+    transform: scale(1.07);
+}
+
+.container {
+    height: 90vh; /* Adjust the height as needed */
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(50%);
+    white-space: nowrap;
+}
+
+.fade-in.fade-in-active {
+    opacity: 1;
+    transform: translateY(0);
+    animation: fade-in-animation 1.3s forwards;
+}
+
+@keyframes fade-in-animation {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.promo {
+    height: 82vh;
+}
+
+.footer {
+    height: 520px;
+    text-align: left;
+}
+
+.organisation {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(194, 194, 194);
+}

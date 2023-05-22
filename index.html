@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Little JingWei</title>
+            <link rel="icon" type="image/x-icon" href="https://st4.depositphotos.com/14768666/24242/v/600/depositphotos_242424116-stock-illustration-fresh-durian-piece-icon-flat.jpg">
+            <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <script src="index.js"></script>
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <style>
+                /* CSS styles */
+                #videoContainer {
+                  align-items: center;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  z-index: 1;
+                  display: none;
+                }
+            
+                #video {
+                  margin: auto;
+                  width: 50%;
+                  height: 50%;
+                }
+            
+                #otherElements {
+                  /* Adjust the z-index of other elements as needed */
+                  position: relative;
+                  z-index: 9999;
+                }
+              </style>
+              <script>
+                // JavaScript code
+                document.addEventListener("DOMContentLoaded", function() {
+                  var videoContainer = document.getElementById("videoContainer");
+                  var video = document.getElementById("video");
+                  var playButton = document.getElementById("playButton");
+            
+                  playButton.addEventListener("click", function(event) {
+                    event.stopPropagation(); // Prevent click event from bubbling to document
+                    videoContainer.style.display = "block";
+                    video.load();
+                    video.play();
+                    video.muted = false;
+                  });
+            
+                  videoContainer.addEventListener("click", function() {
+                    video.pause();
+                    video.currentTime = 0; // Reset playback position to the beginning
+                    video.muted = true;
+                    videoContainer.style.display = "none";
+                  });
+                });
+              </script>
+        </head>
+        <body style="background-color: rgb(207, 243, 199);">
+            <div id="otherElements">
+                <header id="myHeader" style="background-color: rgb(73, 180, 150); margin: auto; height: 110px; width: 100%; padding-top: 20px; padding-bottom: 15px; text-align: center; font-size: 38px; opacity: 0.85;">
+                    <button id="playButton" class="prank" style="background: none; border: none; font-size: 80px; font-family: Futura; color: white;">Durian is Life 😍😍😍</button>
+                </header>
+                <div>
+                    <nav style="background-color: black; opacity: 0.8; height: 120px; width: 100%; color: snow; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                        <h1 class="nav1">Overview</h1>
+                        <h1 class="nav1">Shop</h1>
+                        <h1 class="nav1">Events</h1>
+                        <h1 class="nav1">Contact Us</h1>
+                    </nav>
+                </div>
+                <div class="introduction">
+                    <h1 class="intro">Our History</h1>
+                    <hr>
+                    <h1 class="intro1">Our Mission and Vision</h1>
+                    <hr>
+                    <h1 class="intro2">About Us</h1>
+                </div>
+                <div class="content">
+                    <div class="box1">
+                        <p class="history">When this start-up was first founded, we<br>
+                                           used to spend our expenses without a <br>
+                                           budget. All of them were used to purchase<br>
+                                           the raw materials needed. This led to a<br>
+                                           series of issues. For instance, we could<br>
+                                           not afford fees for packaging, advertisements,<br>
+                                           branding taxes and so on. We could not do<br>
+                                           but to stop paying our employees their<br>
+                                           salaries in order to prevent the company<br>
+                                           from bankruptcy. Unfortunately, most of<br>
+                                           them left. However, we were lucky to have<br>
+                                           six of us who continued tostay working<br>
+                                           without getting paid willingly. We had to<br>
+                                           work ourselves in processes such as<br>
+                                           fabrication, packaging and sales. The works<br>
+                                           were tiring yet we were sincerely grateful<br>
+                                           to have such strong partnership.</p>
+                    </div>
+                    <div class="box2">
+                        <p class="mv">We are dedicated to sell masks with high quality to everyone.</p>
+                        <p class="mv">We guarantee our product's quality while guaranteeing the quantity</p>
+                    </div>
+                    <div class="box3">
+                        <p class="about">ADDRESS: 04, Jalan Jingwei, Taman Ninja Turtle, 14000 Bukit mertajam, Penang.</p>
+                        <p class="about">BUSINESS HOURS: 10a.m. - 11p.m.</p>
+                        <p class="about">CONTACT NUMBER: 012-1231234 (MR.JingWei)</p>
+                        <p class="about">OFFICE EMAIL: jingweiisourleader@gmail.com</p>
+                        <p class="about">MAJOR CUSTOMER: all age, people who like spooky designs</p>
+                        <p class="about">DATE OF CREATION: 10th April 2007</p>
+                        <p class="about">REASON OF CREATION: MR. JingWei had a dream to<br>
+                                         create a shop for selling such weird things<br>
+                                         when he was young. So, he planned to create<br>
+                                         such a shop with his friends.</p>
+                    </div>
+                </div>
+                <div>
+                <h1 class="Name" style="font-size: 55px; color: black; font-family: Futura; text-align: center;">Product</h1>
+                </div>
+                <div class="product">
+                    <div>
+                        <div class="slide" style="display: inline-flex;">
+                          <img src="durian face mask.svg" style="height: 35%; width: 35%; margin: auto; margin-left: 60px; margin-top: 100px;" alt="Durian Face Mask">
+                            <div style="margin-top: 15px; margin-left: 60px; display: inline-block;">
+                                <h1 style="font-size: 34px; color: rgb(34, 34, 34); font-family: Futura; margin-bottom: 5px;">Durian™ Flavoured Face Mask</h1>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star none"></span>
+                                <p style="font-size: 21px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; margin-top: 6px;">4.0</p>
+                                    <div style="text-align: left; font-size: 8px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; margin-top: auto;">
+                                        <h1 style="padding-top: 3px; padding-bottom: 5px;">• High performance medical grade</h1> 
+                                        <h1 style="padding-top: 5px; padding-bottom: 5px;">• Refreshing</h1>
+                                        <h1 style="padding-top: 5px; padding-bottom: 5px;">• 4-ply non-woven ultra-soft fabric</h1>
+                                        <h1 style="padding-top: 5px; padding-bottom: 5px;">• Pleated fabric for different face size</h1>
+                                        <h1 style="padding-top: 5px; padding-bottom: 5px;">• Suitable for anyone who likes heavy taste</h1>
+                                        <h1 style="font-size: 24px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; margin-bottom: 3.5px;">Options:</h1>
+                                        <div class="options" style="display: inline-flex; margin-top: 1px;">
+                                            <button class="classic-green" style="margin-right: 10px; height: 23px; width: 23px; margin-top: 3px ;background-color: rgb(14, 174, 14); border-radius: 50px; border: 3px solid rgb(237, 237, 237);"></button>
+                                            <button class="romantic-red" style="margin-right: 10px; height: 23px; width: 23px; margin-top: 3px ;background-color: rgb(232, 43, 43); border-radius: 50px; border: 3px solid rgb(237, 237, 237);"></button>
+                                            <button class="rainbow-button" style="height: 23px; width: 23px; margin-top: 3px; border-radius: 50px; border: 3px solid rgb(237, 237, 237);"></button>
+                                        </div>
+                                        <div class="quantity-selector" style="margin-top: 10px;">
+                                            <div style="display: inline-flex;">
+                                            <button class="decrement" style="background-color: black; height: 30px; width: 30px; color: white; font-family: Gill Sans; border: none; font-size: 20px; margin-top: 2px;"> - </button>
+                                            <input type="number" min="1" max="15" value="1" style="height: 27px; width: 70px; text-align: center;">
+                                            <button class="increment" style="background-color: black; height: 30px; width: 30px; color: white; font-family: Gill Sans; border: none; font-size: 20px; margin-top: 2px;">+</button>
+                                            <h3 style="font-size: 14px; color: black; opacity: 0.7; font-family: Trebuchet MS; margin-left: 14px;">***Buy now for only RM20/50pcs</h3>
+                                            </div>
+                                          </div>
+                                          <div style="margin-top: 10px;">
+                                            <button class="purchase" style="background-color: rgb(0, 148, 0); border: none; height: 50px; width: 423px; text-align: center; border-radius: 30px;">
+                                                <h2 style="font-family: Trebuchet MS; font-size: 18px; color: white; text-align: center;">Buy Now</h2>
+                                            </button>
+                                          </div>                                          
+                                    </div>
+                            </div>
+                        </div>
+            <div>               
+                <div class="container" style="align-items: center; display: inline-block;">
+                    <h1 class="fade-in" style="font-size: 55px; color: black; font-family: Futura; text-align: center; margin-bottom: 10px;">Promotion and Special Deals ✅✅✅</h1>
+                    <div class="promo" style="margin: auto; background-color: white; width: 1000px;">
+                        <h1 style="text-align: center; font-family: Trebuchet MS; padding-top: 18px;">🎁 GIVEAWAY 🎁</h1>
+                        <div style="margin-top: 5px;">
+                        <div class="promo-img" style="display: inline-block; margin: auto;">
+                            <div style="display: inline-flex; text-align: center;">
+                                <h1 style="margin-left: 220px; margin-right: 310px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">For girls</h1>
+                                <h1 style="margin: auto; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">For boys</h1>
+                            </div>
+                            <div style="display: inline-flex; align-items: center; margin-top: 20px;">
+                                <div style="margin-left: 140px; margin-right: 160px;">                                
+                                    <img src="p2.png" alt="girl" style="width: 280px; height: auto;">
+                                </div>
+                                <div>
+                                    <img src="Picture 1.png" alt="boy" style="width: 280px; height: auto;">
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <footer>
+            <div style="margin: auto; margin-top: 50px; justify-content: center; display: flex;">
+                <nav class="footer" style="background-color: rgb(0, 0, 0); opacity: 0.98; width: 100vw; position: absolute; display: inline-flex;">
+                    <img src="https://st4.depositphotos.com/14768666/24242/v/600/depositphotos_242424116-stock-illustration-fresh-durian-piece-icon-flat.jpg" alt="Logo" style="height: 200px; width: 200px; border-radius: 50%; margin-left: 50px; margin-top: 50px;">
+                    <h1 style="font-family: Futura; color: white; margin-top: 100px; margin-left: 30px;">Little JingWei</h1>
+                    <div style="display: inline-block;">
+                    <div class="organisation" style="margin-left: 80px; margin-top: 70px; display: inline-flex;">
+                        <div style="margin-right: 120px;">
+                            <h1>Manager</h1>
+                            <h3 style="font-family: Trebuchet MS;">Lim Chin Win</h3>
+                        </div>
+                        <div>
+                            <h1 style="margin-left: 210px">Marketing Executive</h1>
+                            <h3 style="font-family: Trebuchet MS; margin-left: 210px;">Ariin Teoh</h3>
+                        </div>
+                    </div>
+                    <div class="organisation" style="margin-left: 80px; display: inline-flex;">
+                        <div style="margin-right: 120px;">
+                            <h1>Production Supervisor</h1>
+                            <h3 style="font-family: Trebuchet MS;">Tan Yi Sheng</h3>
+                        </div>
+                        <div>
+                            <h1 style="margin-left: 10px">Director</h1>
+                            <h3 style="font-family: Trebuchet MS; margin-left: 10px;">Evon Lee</h3>
+                        </div>
+                    </div>
+                    <div class="organisation" style="margin-left: 80px; display: inline-flex;">
+                        <div style="margin-right: 120px;">
+                            <h1>Seller</h1>
+                            <h3 style="font-family: Trebuchet MS;">Lim Ai Ying</h3>
+                        </div>
+                        <div>
+                            <h1 style="margin-left: 230px">Seller</h1>
+                            <h3 style="font-family: Trebuchet MS; margin-left: 230px;">Lee Qian Xin</h3>
+                        </div>
+                    </div>
+                    </div>
+                </nav>
+            </div>
+        </footer>
+        </div>
+        <div id="videoContainer" style="display: none;">
+            <video id="video" src="WHat is Love.mp4" autoplay controls style="margin-left: 350px;"></video>
+          </div>
+        </body>
+    </html>
